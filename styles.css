@@ -11,14 +11,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #c1f1ff;
     width: 100%;
 }
 
 header {
     width: 100%;
     background: #222;
-    color: white;
+    color: rgb(255, 243, 255);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(241, 219, 219);
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@ section {
 footer {
     width: 100%;
     background: #222;
-    color: white;
+    color: rgb(216, 189, 210);
     text-align: center;
     padding: 15px;
     margin-top: 20px;
