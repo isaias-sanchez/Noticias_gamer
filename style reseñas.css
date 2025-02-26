@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Últimas Noticias */
+#ultimas-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.noticia, .lanzamiento, .resena {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    text-align: left;
+}
+
+.noticia img, .lanzamiento img, .resena img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.noticia h3, .lanzamiento h3, .resena h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.noticia p, .lanzamiento p, .resena p {
+    font-size: 14px;
+    color: #555;
+}
+
+.noticia a, .lanzamiento a, .resena a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de Próximos Lanzamientos */
+#proximos-lanzamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Estilos para la sección de Reseñas */
+#resenas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #registro form, #contacto table {
+        width: 90%;
+    }
+    
+    section {
+        width: 90%;
+    }
+    
+    #ultimas-noticias, #proximos-lanzamientos, #resenas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .noticia, .lanzamiento, .resena {
+        width: 90%;
+    }
+}
+
+footer {
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
